@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+</head>
+<body >
+    <nav>
+        <ul>
+            <li class="home">Home</li>
+            <li class="explor" >Explor</li>
+            <li class="about" >About</li>
+
+        </ul>
+    </nav>
+    <section class="main">
+        <img class=".img-2"  src="earth.png" alt="">
+      
+        <div class="container">
+         <h4>plante</h4>
+         <h1>Earth</h1>
+         <p>The Earth is the third planet from the sun. It is also called the blue planet because it looks blue in colour from the outer surface. </p>
+        </div>
+        <div class=" container2">
+            <h4>explore</h4>
+            <h1>Earth</h1>
+            <p>The Earth is the third planet from the sun. It is also called the blue planet because it looks blue in colour from the outer surface. </p>
+           </div>
+           <div class=" container3">
+            <h4>about</h4>
+            <h1>Earth</h1>
+            <p>The Earth is the third planet from the sun. It is also called the blue planet because it looks blue in colour from the outer surface. </p>
+             <h6>see more about earth</h6>
+            <a href="https://earth.google.com/web/@-4.72487658,7.56428162,-15431.47879353a,15983889.31409598d,35y,-0h,0t,0r"> <i class="fa fa-chevron-right"></i></a>
+        </div> 
+    </section>
+
+
+ <script>
+     document.querySelector(".home").addEventListener("click", function(){
+        document.querySelector("img").className = "";  
+        document.querySelector(".container").style.opacity = "1";  
+        document.querySelector(".container2").style.opacity = "0";
+        document.querySelector(".container3").style.opacity = "0";
+        document.querySelector(".home").style.color = "#7f7e7e";
+
+        document.querySelector(".explor").style.color = "#fff";
+        document.querySelector(".about").style.color = "#fff";
+
+
+    })
+   
+
+
+ 
+    document.querySelector(".explor").addEventListener("click", function(){
+        document.querySelector("img").className = "img-1";  
+        document.querySelector(".container").style.opacity = "0";  
+        document.querySelector(".container2").style.opacity = "1";
+        document.querySelector(".container3").style.opacity = "0";
+        document.querySelector(".explor").style.color = "#7f7e7e";
+        document.querySelector(".container2").style.transform = "translateX(10%)";
+        document.querySelector(".home").style.color = "#fff";
+        document.querySelector(".about").style.color = "#fff";
+
+
+    })
+    document.querySelector(".about").addEventListener("click", function(){
+        document.querySelector("img").className = "img-2";  
+        document.querySelector(".container").style.opacity = "0";  
+        document.querySelector(".container2").style.opacity = "0";
+        document.querySelector(".container3").style.opacity = "1";
+        document.querySelector(".about").style.color = "#7f7e7e";
+        document.querySelector(".container2").style.transform = "translateX(10%)";
+        document.querySelector("ul").style.color = "#fff";
+        document.querySelector(".home").style.color = "#fff";
+        document.querySelector(".explor").style.color = "#fff";
+
+    })
+ </script>
+</body>
+</html>
